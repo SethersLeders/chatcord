@@ -32,7 +32,7 @@ io.on("connection", (socket) => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit("message", formatMessage(botName, "Welcome to ChatCord!"));
+    socket.emit("message", formatMessage(botName, "Welcome to ChatCord!", "bot-color"));
 
     // Broadcast when a user connects
     socket.broadcast
@@ -53,7 +53,7 @@ io.on("connection", (socket) => {
   socket.on("chatMessage", (msg) => {
     const user = getCurrentUser(socket.id);
 
-    io.to(user.room).emit("message", formatMessage(user.username, msg));
+    io.to(user.room).emit("message", formatMessage(user.username, msg, user.userColor));
   });
 
   // Runs when client disconnects

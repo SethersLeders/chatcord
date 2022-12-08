@@ -1,8 +1,10 @@
 const users = [];
+const userColors = ['orange', 'black', 'red', 'blue', 'green', 'purple', 'navy']
 
 // Join user to chat
 function userJoin(id, username, room) {
-  const user = { id, username, room };
+  userColor = userColors[Math.floor(Math.random() * userColors.length)];
+  const user = { id, username, room, userColor };
 
   users.push(user);
 
