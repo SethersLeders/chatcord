@@ -1,4 +1,8 @@
 # ChatCord App
+
+This is a project tutorial by https://github.com/bradtraversy
+I followed along to learn react and mainly socket.io, but most of this work isn't my own. I fixed some little personal, mostly aesthetic touches, and added custom username colors for each user. In the tutorial they are all the same color as the bot, but I added an element to the user so that when they join a lobby they are assigned a random color, and their username is styled to match.
+
 Realtime chat app with websockets using Node.js, Express and Socket.io with Vanilla JS on the frontend with a custom UI
 [![Run on Repl.it](https://repl.it/badge/github/bradtraversy/chatcord)](https://repl.it/github/bradtraversy/chatcord)
 ## Usage
