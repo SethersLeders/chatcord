@@ -1,3 +1,7 @@
+---
+permalink: public/index.html
+---
+
 # ChatCord App
 
 This is a project tutorial by https://github.com/bradtraversy
